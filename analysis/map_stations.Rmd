@@ -1,0 +1,106 @@
+---
+title: "Climate stations"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+---
+
+```{r setup, include=FALSE}
+library("flexdashboard")
+```
+
+```{r packages, include=FALSE, message=FALSE, warning=FALSE}
+library("flexdashboard")
+library("rgdal")
+library("leaflet") 
+library("raster")
+library("sp")
+library("tidyverse")
+library("here")
+
+machine <- 'ajpelu' 
+# machine <- 'ajpeluLap' 
+```
+
+
+```{r}
+# stations 
+stations <- read.csv(here::here("data_raw/cli_estaciones.csv"), header = TRUE, sep = ";")
+
+
+# Remove NAs y valores equivocados
+# Remove stations with n_records == 0 
+s <- stations %>% 
+  mutate(fecha_inicio = as.Date(fecha_inicio, format = "%Y-%m-%d"),
+         fecha_fin = as.Date(fecha_fin, format = "%Y-%m-%d")) %>% 
+  drop_na(long:lat) %>% 
+  filter(long > -6) %>% 
+  filter(numero_registros > 0)
+
+sp_station <- SpatialPointsDataFrame(coords = s[, c("long", "lat")], data = s)
+proj4string(sp_station) <- CRS("+init=epsg:4326")
+
+### --- Read limits of Sierra Nevada Protected area
+mydsn = paste0('/Users/', machine, '/Google Drive/carto_public/EENNPP/InfGeografica/InfVectorial/Shapes/ED50_30')
+enp <- readOGR(dsn=mydsn, layer = 'EENNPP', encoding="UTF-8", verbose = FALSE)
+# proj4string(enp) <- CRS("+init=epsg:23030")
+enp_r <- spTransform(enp, CRS("+init=epsg:4326"))
+
+# Select Sierra Nevada 
+sn <- subset(enp_r, NOMBRE == 'SIERRA NEVADA' & FIGURA == 'Espacio Natural')
+sn_nat <- subset(enp_r, NOMBRE == 'SIERRA NEVADA' & FIGURA == 'Parque Nacional')
+```
+
+### Distribution of Climate Stations
+
+```{r}
+# Extent of map 
+# Set spatial extent 
+myext <- extent(sn)
+
+popup_station <- paste0("<strong>Code:</strong> ", sp_station@data$codigo,
+                        "<br><strong>Name:</strong> ", sp_station@data$nombre,
+                        "<br><strong>Status:</strong> ",  ifelse(sp_station@data$estado == "t", "TRUE", "FALSE"),
+                        "<br><strong>N records:</strong> ",  sp_station@data$numero_registros, 
+                        "<br><strong>Start date:</strong> ",  sp_station@data$fecha_inicio,
+                        "<br><strong>End date:</strong> ",  sp_station@data$fecha_fin
+                        )
+
+
+
+mipal <- colorFactor(palette = c("purple", "blue"), levels = levels(sp_station@data$estado))
+
+
+leaflet() %>%
+  fitBounds(myext@xmin, myext@ymin, myext@xmax, myext@ymax) %>% 
+  addWMSTiles('http://www.ideandalucia.es/wms/mdt_2005?',
+              layers = 'Sombreado_10',
+              options = WMSTileOptions(format = "image/png", transparent = TRUE),
+              attribution = '<a href="http://www.juntadeandalucia.es/institutodeestadisticaycartografia" target="_blank">Instituto de Estadística y Cartografía de Andalucía</a>', 
+              group = 'Hillshade') %>% 
+  addTiles(urlTemplate = "http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+           attribution = '<a href="https://carto.com/attributions">CARTO</a>',
+           group = 'Basemap') %>%
+
+  addWMSTiles('http://www.ideandalucia.es/services/toporaster10/wms?',
+              layers = 'toporaster10',
+              options = WMSTileOptions(format = "image/png", transparent = FALSE),
+              attribution = '<a href="http://www.juntadeandalucia.es/institutodeestadisticaycartografia" target="_blank">Instituto de Estadística y Cartografía de Andalucía</a>',
+              group = 'Topographical') %>%
+  addProviderTiles("Esri.WorldImagery", group='Satellite') %>% 
+  addProviderTiles("HikeBike.HillShading", group='Hillshade2') %>% 
+  addLayersControl(position = 'bottomright',
+                   baseGroups = c("Hillshade", "Satellite", "Basemap", "Topographical"),
+                   overlayGroups = c('Natural Protected Area', 'Estaciones (OBSNEV)'), 
+                   options = layersControlOptions(collapsed = FALSE)) %>% 
+  addPolylines(data=sn, color='red', 
+               group='Natural Protected Area', weight= 3) %>% 
+  addCircleMarkers(sp_station@data,
+             lng=sp_station@data$long,
+             lat=sp_station@data$lat, group = "Estaciones (OBSNEV)",
+            # color = ~ mipal(sp_station@data$estado),
+             radius = 6, stroke = FALSE, fillOpacity = 0.7)
+``` 
+
+
+ 

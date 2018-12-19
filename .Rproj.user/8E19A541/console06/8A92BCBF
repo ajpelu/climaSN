@@ -1,0 +1,298 @@
+]0;~/ugrDrive/PROYECTOS/climaSN[?1034h[01;33majpeluLap@ajpeluMacBookAir[00m:[01;36m~/ugrDrive/PROYECTOS/climaSN[0;32m[00m$ [K[01;33majpeluLap@ajpeluMacBookAir[00m:[01;36m~/ugrDrive/PROYECTOS/climaSN[0;32m[00m$ git status
+fatal: not a git repository (or any of the parent directories): .git
+]0;~/ugrDrive/PROYECTOS/climaSN[01;33majpeluLap@ajpeluMacBookAir[00m:[01;36m~/ugrDrive/PROYECTOS/climaSN[0;32m[00m$ ls
+[1m[35mR[39;49m[0m                [1m[35manalysis[39;49m[0m         [1m[35mdata[39;49m[0m             notes_prec.html  prepareLinaria.R
+README.md        climaSN.Rproj    [1m[35mdata_raw[39;49m[0m         notes_prec.md    prepareWimmed.R
+]0;~/ugrDrive/PROYECTOS/climaSN[01;33majpeluLap@ajpeluMacBookAir[00m:[01;36m~/ugrDrive/PROYECTOS/climaSN[0;32m[00m$ .  /
+.Rproj.user/ R/           analysis/    data/        data_raw/    
+git init
+Initialized empty Git repository in /Users/ajpeluLap/ugrDrive/PROYECTOS/climaSN/.git/
+]0;~/ugrDrive/PROYECTOS/climaSN[01;33majpeluLap@ajpeluMacBookAir[00m:[01;36m~/ugrDrive/PROYECTOS/climaSN[0;32m (master #%)[00m$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.Rhistory[m
+	[31m.Rproj.user/[m
+	[31mREADME.md[m
+	[31manalysis/[m
+	[31mclimaSN.Rproj[m
+	[31mdata/[m
+	[31mdata_raw/[m
+	[31mnotes_prec.html[m
+	[31mnotes_prec.md[m
+	[31mprepareLinaria.R[m
+	[31mprepareWimmed.R[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;~/ugrDrive/PROYECTOS/climaSN[01;33majpeluLap@ajpeluMacBookAir[00m:[01;36m~/ugrDrive/PROYECTOS/climaSN[0;32m (master #%)[00m$ [K[01;33majpeluLap@ajpeluMacBookAir[00m:[01;36m~/ugrDrive/PROYECTOS/climaSN[0;32m (master #%)[00m$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=<remote>/<branch> master
+
+]0;~/ugrDrive/PROYECTOS/climaSN[01;33majpeluLap@ajpeluMacBookAir[00m:[01;36m~/ugrDrive/PROYECTOS/climaSN[0;32m (master #%)[00m$ gi r   t  it r     it remote https://github.com/ajpel u/climaSN.git
+error: Unknown subcommand: https://github.com/ajpelu/climaSN.git
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+]0;~/ugrDrive/PROYECTOS/climaSN[01;33majpeluLap@ajpeluMacBookAir[00m:[01;36m~/ugrDrive/PROYECTOS/climaSN[0;32m (master #%)[00m$ [Kgit remote mu yupstream https://githu b.com/ajpelu/climaSN.git
+error: Unknown subcommand: myupstream
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+]0;~/ugrDrive/PROYECTOS/climaSN[01;33majpeluLap@ajpeluMacBookAir[00m:[01;36m~/ugrDrive/PROYECTOS/climaSN[0;32m (master #%)[00m$ [Kgit remov te -v
+]0;~/ugrDrive/PROYECTOS/climaSN[01;33majpeluLap@ajpeluMacBookAir[00m:[01;36m~/ugrDrive/PROYECTOS/climaSN[0;32m (master #%)[00m$ gti  it add .
+]0;~/ugrDrive/PROYECTOS/climaSN[01;33majpeluLap@ajpeluMacBookAir[00m:[01;36m~/ugrDrive/PROYECTOS/climaSN[0;32m (master *#)[00m$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	[32mnew file:   .Rhistory[m
+	[32mnew file:   .Rproj.user/8E19A541/console06/8A92BCBF[m
+	[32mnew file:   .Rproj.user/8E19A541/console06/8A92BCBF.env[m
+	[32mnew file:   .Rproj.user/8E19A541/console06/INDEX001[m
+	[32mnew file:   .Rproj.user/8E19A541/pcs/files-pane.pper[m
+	[32mnew file:   .Rproj.user/8E19A541/pcs/source-pane.pper[m
+	[32mnew file:   .Rproj.user/8E19A541/pcs/windowlayoutstate.pper[m
+	[32mnew file:   .Rproj.user/8E19A541/pcs/workbench-pane.pper[m
+	[32mnew file:   .Rproj.user/8E19A541/rmd-outputs[m
+	[32mnew file:   .Rproj.user/8E19A541/saved_source_markers[m
+	[32mnew file:   .Rproj.user/8E19A541/sources/prop/7F3F8F30[m
+	[32mnew file:   .Rproj.user/8E19A541/sources/prop/INDEX[m
+	[32mnew file:   .Rproj.user/8E19A541/sources/s-3111E957/F8D7BCA[m
+	[32mnew file:   .Rproj.user/8E19A541/sources/s-3111E957/F8D7BCA-contents[m
+	[32mnew file:   .Rproj.user/8E19A541/sources/s-3111E957/lock_file[m
+	[32mnew file:   .Rproj.user/shared/notebooks/patch-chunk-names[m
+	[32mnew file:   .Rproj.user/shared/notebooks/paths[m
+	[32mnew file:   README.md[m
+	[32mnew file:   analysis/map_stations.Rmd[m
+	[32mnew file:   analysis/map_stations.html[m
+	[32mnew file:   climaSN.Rproj[m
+	[32mnew file:   data/prec/wimmed2015/prec_wimmed_data.csv[m
+	[32mnew file:   data/prec/wimmed2015/prec_wimmed_stations.csv[m
+	[32mnew file:   data_raw/2015 PPalazon - Snow trends Sierra Nevada.pdf[m
+	[32mnew file:   data_raw/cli_estaciones.csv[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1902-01-01_1939-12-31_Pd7a7_5515A - Granada, Universidad.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1918-01-01_2004-02-29_Pd7a7_5112 - Guadix, C. de A..txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1921-11-01_2002-05-31_Pd7a7_5110 - Cogollos de Guadix.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1925-06-01_1994-03-31_Pd7a7_5513 - Monachil.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1929-11-01_2004-11-30_Pd024_5515 - Granada, Cartuja.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1929-11-01_2004-11-30_Pd7a7_5515 - Granada, Cartuja.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1945-01-01_1988-12-31_Pd7a7_6248 - Ca\303\261ar, Los Jarales.txt"[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1946-04-01_1987-01-31_Pd7a7_6263 - Presa de V\303\251lez de Benaudalla.txt"[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1946-06-01_1992-12-31_Pd7a7_6251 - D\303\272rcal, Presa.txt"[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1946-06-01_1995-03-31_Pd7a7_6264 - V\303\251lez de Benaudalla, Central.txt"[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1946-06-01_1997-01-31_Pd7a7_6252 - D\303\272rcal, Central.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1947-06-01_1987-11-30_Pd7a7_5549A - Pinos-Puente, Vivero Forestal.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1947-11-01_1990-12-31_Pd7a7_6311 - Canjayar.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1947-12-01_1992-08-31_Pd7a7_6287 - Berja.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1950-11-01_1975-07-31_Pd7a7_6278 - Alcolea.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1954-09-01_1987-01-31_Pd7a7_6302 - Abrucena.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1955-03-01_1974-12-31_Pd7a7_5505 - Beas de Granada, Puertoblanco.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1956-08-01_1976-12-31_Pd7a7_5107 - D\303\263lar, Casa Forestal.txt"[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1956-09-01_1966-07-31_Pd7a7_5100 - Hu\303\251tor - Santill\303\241n, La Sarguilla.txt"[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1960-01-01_2009-03-31_Pd7a7_6307 - L\303\241ujar, Cerecillo.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1960-01-01_2010-02-28_Pd7a7_6286 - Berja, Castala.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1960-01-01_2012-12-31_Pd7a7_6295 - F\303\251lix.txt"[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1960-01-01_2012-12-31_Pd7a7_6309 - L\303\241ujar.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1960-01-01_2012-12-31_Pd7a7_6312 - Canjayar, Vivero Cristal.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1960-01-01_2013-04-30_Pd7a7_5569E - Albu\303\261uelas, Huida.txt"[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1960-01-01_2015-08-31_Pd7a7_5504 - Quentar, Toc\303\263n.txt"[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1960-01-01_2015-08-31_Pd7a7_5514 - Granada, Base A\303\251rea.txt"[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1960-01-01_2015-08-31_Pd7a7_5518 - D\303\255lar, El Toril.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1960-01-01_2015-08-31_Pd7a7_6250 - Padul, Aguadero.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1960-01-01_2015-08-31_Pd7a7_6253 - Niguelas.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1960-01-01_2015-08-31_Pd7a7_6258 - Lanjar\303\263n.txt"[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1960-01-01_2015-08-31_Pd7a7_6308 - L\303\241ujar, Monterrey.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1961-01-01_1985-09-30_Pd7a7_6283 - Beninar.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1961-01-01_1988-05-31_Pd7a7_6304 - Do\303\261a Mar\303\255a de Oca a Santillana.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1961-01-01_1990-04-30_Pd7a7_6299E - Hueneja, La Ramblosa.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1961-01-01_1991-04-30_Pd7a7_6317 - Fuente Santa.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1961-01-01_1995-02-28_Pd7a7_6318 - Gatuna.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1961-01-01_2000-06-30_Pd7a7_6314 - Alhama de Almer\303\255a.txt"[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1961-01-01_2004-12-31_Pd7a7_6273 - Albu\303\261ol a \303\223rjiva, C.P.C..txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1961-01-01_2010-11-30_Pd7a7_6303 - Nacimiento, Gilma Moderno.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1961-01-01_2012-01-31_Pd7a7_6347 - Los Santos de Alcontar.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1961-01-01_2012-04-30_Pd7a7_6226 - Torvizc\303\263n.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1961-01-01_2012-05-31_Pd7a7_6315 - Gergal.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1961-01-01_2012-09-30_Pd7a7_6281 - Ug\303\255jar.txt"[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1961-01-01_2012-11-30_Pd7a7_6313 - Alhama de Almer\303\255a, La Zarba.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1961-01-01_2012-12-31_Pd7a7_6221 - Lentegi.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1961-01-01_2012-12-31_Pd7a7_6224 - B\303\251rchules.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1961-01-01_2012-12-31_Pd7a7_6225 - Cadiar.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1961-01-01_2012-12-31_Pd7a7_6246 - Soport\303\272jar, Casa Forestal.txt"[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1961-01-01_2012-12-31_Pd7a7_6275 - Albu\303\261ol.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1961-01-01_2012-12-31_Pd7a7_6282 - Mecina Bombaron.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1961-01-01_2012-12-31_Pd7a7_6346 - Alcontar.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1961-01-01_2015-07-31_Pd7a7_6236 - Portugos.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1961-01-01_2015-08-31_Pd7a7_6247 - \303\223rgiva.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1961-01-01_2015-08-31_Pd7a7_6249 - Padul.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1961-01-11_1986-09-30_Pd7a7_6261 - Gu\303\241jar, Faraguit.txt"[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1961-02-01_1986-11-30_Pd7a7_6254E - Albu\303\261uelas.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1961-02-01_2012-12-31_Pd7a7_6305 - Nacimiento.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1962-01-01_1977-04-30_Pd7a7_5526 - La Mala.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1962-01-01_2012-12-31_Pd7a7_6301 - Abrucena, Los Jarales.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1964-01-01_1988-03-31_Pd7a7_6316 - Gergal a Nacimiento, C.P.C..txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1964-08-01_2012-12-31_Pd7a7_6279 - Bayarcal.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1965-01-01_1993-02-28_Pd024_5511E - Granada, Sierra Nevada.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1965-01-01_1993-02-28_Pd7a7_5511E - Granada, Sierra Nevada.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1965-01-01_1997-01-31_Pd7a7_6257 - Lanjar\303\263n, Tello.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1965-01-01_2009-02-28_Pd7a7_6306 - Alboloduy.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1965-01-01_2010-12-31_Pd7a7_6310 - Ohanes, Central El\303\251ctrica.txt"[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1965-01-01_2012-12-31_Pd7a7_6234 - Tr\303\251velez.txt"[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1965-01-01_2012-12-31_Pd7a7_6262 - Gu\303\241jar, Fond\303\263n.txt"[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1965-01-01_2012-12-31_Pd7a7_6284 - Tur\303\263n.txt"[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1965-01-01_2012-12-31_Pd7a7_6300 - Fi\303\261ana.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1965-02-01_2015-08-31_Pd7a7_5102 - Cortes y Graena, Lopera.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1965-11-01_1977-11-30_Pd7a7_6245 - \303\223rjiva, Sierra de L\303\272jar.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1966-01-01_1982-12-31_Pd7a7_5504A - Quentar, Aguas Blancas.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1966-02-01_2015-08-31_Pd7a7_5520 - Alhend\303\255n, I.N.M..txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1966-11-01_1996-05-31_Pd7a7_6243 - Pitres.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1968-01-01_1992-11-30_Pd7a7_6295E - \303\211nix.txt"[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1969-04-01_2015-08-31_Pd7a7_5112A - Guadix, Instituto T\303\251cnico.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1970-05-01_1987-02-28_Pd7a7_5506F - Quentar, ICONA.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1971-01-01_1988-03-31_Pd7a7_6234E - Busquistar, Cortijo La Calahorra.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1971-01-01_1998-10-31_Pd7a7_5044E - Caniles, C. Fraile.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1971-02-01_1995-01-31_Pd7a7_5524A - Atarfe, SEA.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1972-06-01_1998-12-31_Pd7a7_6242U - Poqueira, Central El\303\251ctrica.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1972-07-01_2015-08-31_Pd7a7_5530E - Granada, Aeropuerto.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1972-09-01_1998-12-31_Pd7a7_6243E - Pampaneira, Central.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1976-02-01_1989-03-31_Pd7a7_5109E - Alquife, Ms. del Marquesado.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1980-01-01_2015-08-31_Pd7a7_5113O - Valle del Zalabi, Charches.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1981-05-01_1986-03-31_Pd7a7_6299A - Hueneja, CHS.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1983-01-01_1990-07-31_Pd7a7_5106 - Aldeire, Pe\303\261a Forestal.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1983-02-01_1991-02-28_Pd7a7_5043I - Baza, Arredondo.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1984-04-01_1998-10-31_Pd7a7_5043E - Baza, El Tesorero.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1985-01-01_1988-03-31_Pd7a7_6251E - D\303\272rcal, Granja Escuela.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1985-01-01_1992-05-31_Pd7a7_6280U - Mairena.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1985-06-01_1985-12-31_Pd7a7_5111O - Guadix, El Casta\303\261uelo.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1985-11-01_2015-08-31_Pd7a7_5112B - Guadix, Can-Ibice.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1985-12-01_1989-03-31_Pd7a7_5519 - D\303\255lar.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1985-12-01_1991-05-31_Pd7a7_5507 - Pinos-Genil, Acequia Gorda.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1985-12-01_2002-06-30_Pd7a7_5099 - Hu\303\251tor - Santill\303\241n, El Molinillo.txt"[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1985-12-01_2003-08-31_Pd7a7_5529 - Santa F\303\251.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1985-12-01_2004-05-31_Pd7a7_5108 - Aldeire.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1985-12-01_2004-09-30_Pd7a7_5559 - Ventas de Huelma.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1985-12-01_2004-10-31_Pd7a7_5560 - Chauchina, La Ola.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1985-12-01_2007-12-31_Pd7a7_5506 - Pantano de Quentar.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1985-12-01_2009-02-28_Pd7a7_5116 - Darro.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1985-12-01_2010-04-30_Pd7a7_5109 - Jeres del Marquesado.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1985-12-01_2010-05-31_Pd7a7_5548 - Atarfe, Caparacena.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1985-12-01_2010-06-30_Pd7a7_5101 - La Peza.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1985-12-01_2010-06-30_Pd7a7_5115 - Diezma.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1985-12-01_2010-07-31_Pd7a7_5509 - Hu\303\251tor-Santill\303\241n.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1985-12-01_2010-07-31_Pd7a7_5522 - Albolote.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1985-12-01_2010-07-31_Pd7a7_5541 - Pantano Cubillas.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1985-12-01_2010-07-31_Pd7a7_5559 - Ventas de Huelma.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1985-12-01_2010-08-31_Pd7a7_5124 - Gor.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1985-12-01_2010-08-31_Pd7a7_5502 - Pinos-Genil.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1985-12-01_2015-08-31_Pd7a7_5517 - D\303\255lar, Central El\303\251ctrica.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1986-03-01_1989-12-31_Pd7a7_6314I - Calar Alto.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1986-07-01_2015-04-30_Pd7a7_6274U - Albond\303\263n.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1986-10-01_2010-08-31_Pd7a7_5568U - Jayena, Los Alauises.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1986-10-01_2010-12-31_Pd7a7_5113A - Benalua de Guadix Zayete.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1987-01-01_1994-12-31_Pd7a7_5557O - Agr\303\263n-Fatimbullar.txt"[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1987-06-01_2015-08-31_Pd7a7_6274B - Sorvil\303\241n.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1988-01-01_2015-08-31_Pd7a7_6298I - Charches.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1989-01-01_1991-12-31_Pd7a7_5103 - Cortes y Graena, Graena.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1989-01-01_1998-07-31_Pd7a7_5512 - Monachil, Cortijo Mimbres.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1989-01-01_2004-03-31_Pd7a7_5501 - Guejar-Sierra.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1989-01-01_2007-04-30_Pd7a7_5520A - Alhend\303\255n, C. de Aguas.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1989-01-01_2015-08-31_Pd7a7_6257I - Arquilla.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1989-01-01_2015-08-31_Pd7a7_6257O - Posturas.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1990-08-01_2013-01-31_Pd7a7_6281E - Velor - Nechite.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1990-08-01_2014-12-31_Pd7a7_5108A - Aldeire, I.N.M..txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1991-01-01_1991-05-31_Pd7a7_5113 - Benalua de Guadix.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1991-04-01_2000-04-30_Pd7a7_5558 - Ventas de Huelma, Circullar.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1991-06-06_2014-11-04_Pd7a7_E190 - Abla.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1991-06-07_2004-04-22_Pd024_E182 - Granada, Aeropuerto.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1991-06-07_2014-03-30_Pd7a7_E182 - Granada, Aeropuerto.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1992-01-01_2003-12-31_Pd7a7_5501O - Presa de Canales.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1992-01-01_2010-05-31_Pd7a7_5549 - Pinos-Puente, C. de A..txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1992-06-01_2010-05-31_Pd7a7_5528 - Chimeneas, Santa Catalina.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1992-09-01_2010-08-31_Pd7a7_5540 - Calicasas.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1992-11-01_1997-05-31_Pd7a7_5516 - Presa de D\303\255lar.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1992-11-01_2015-08-31_Pd7a7_5514A - La Zubia.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1993-05-01_2010-07-31_Pd7a7_5510B - Granada, Generalife.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/1993-11-01_2015-07-31_Pd7a7_5509A - Hu\303\251tor-Santill\303\241n, Villa Mar\303\255a.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1993-11-01_2015-08-31_Pd7a7_5522B - Albolote, Cortijo Albarrate.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1997-01-09_1997-11-30_Pd024_E027 - Sierra Nevada, Monachil.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1997-09-25_2006-09-08_Pd7a7_EARM12 - Abla.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1999-01-12_2009-05-11_Pd7a7_EARM09 - Puerto Lobo.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1999-08-18_2015-08-31_Pd7a7_EARM10 - Jeres del Marquesado.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/1999-09-22_2015-08-31_Pd7a7_EARM27 - Soportujar.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/2000-02-01_2015-08-31_Pd7a7_RIA0405 - Fi\303\261ana.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/2000-08-23_2015-03-17_Pd7a7_RIA1804 - Pinos Puente.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/2000-09-06_2015-08-29_Pd7a7_RIA1806 - Jerez del Marquesado.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/2000-09-06_2015-08-31_Pd7a7_RIA1807 - C\303\241diar.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/2001-01-01_2015-08-31_Pd7a7_6302A - Abla.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/2001-01-25_2015-08-31_Pd7a7_RIA1810 - Padul.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/2004-11-04_2015-08-31_Pd7a7_PG2 - Refugio de Poqueira.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/2005-09-07_2015-08-31_Pd7a7_RIA18101 - IFAPA Centro Camino del Purchil.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/2005-11-19_2015-08-31_Pd7a7_PG1 - Tajos de Breca.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/2006-06-24_2008-04-15_Pd7a7_SNEV292 - Cortijuela.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/2006-07-13_2008-03-31_Pd7a7_SNEV323 - Laguna Seca 1.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/2007-10-26_2015-08-31_Pd7a7_PSN02 - Embarcadero.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/2007-11-16_2015-08-31_Pd7a7_PSN05 - El Encinar.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/2007-11-21_2015-08-31_Pd7a7_PSN01 - Algibe de Montenegro.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/2008-01-01_2015-08-30_Pd7a7_PSN06 - Laguna Seca.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/2008-01-01_2015-08-31_Pd7a7_PSN03 - Piedra de los Soldados.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/2008-01-01_2015-08-31_Pd7a7_PSN04 - Rambla de Guadix.txt[m
+	[32mnew file:   "data_raw/prec_diaria_wimmed/2008-01-01_2015-08-31_Pd7a7_PSN07 - Robledal de C\303\241\303\261ar.txt"[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/2008-01-01_2015-08-31_Pd7a7_PSN08 - Veleta.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/2009-08-28_2015-08-31_Pd7a7_PG3 - Contraviesa.txt[m
+	[32mnew file:   data_raw/prec_diaria_wimmed/2012-10-11_2015-08-31_Pd7a7_PG4 - Cebadilla.txt[m
+	[32mnew file:   data_raw/prec_linaria.csv[m
+	[32mnew file:   data_raw/prec_linaria_variables.csv[m
+	[32mnew file:   notes_prec.html[m
+	[32mnew file:   notes_prec.md[m
+	[32mnew file:   prepareLinaria.R[m
+	[32mnew file:   prepareWimmed.R[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/8E19A541/console06/8A92BCBF[m
+
+]0;~/ugrDrive/PROYECTOS/climaSN[01;33majpeluLap@ajpeluMacBookAir[00m:[01;36m~/ugrDrive/PROYECTOS/climaSN[0;32m (master *#)[00m$ sublime git   .git/ ig  ignre
+]0;~/ugrDrive/PROYECTOS/climaSN[01;33majpeluLap@ajpeluMacBookAir[00m:[01;36m~/ugrDrive/PROYECTOS/climaSN[0;32m (master *#)[00m$ sublime .gitignore
+]0;~/ugrDrive/PROYECTOS/climaSN[01;33majpeluLap@ajpeluMacBookAir[00m:[01;36m~/ugrDrive/PROYECTOS/climaSN[0;32m (master *#)[00m$ g 
