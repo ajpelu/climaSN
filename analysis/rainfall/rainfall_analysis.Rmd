@@ -1,0 +1,47 @@
+---
+title: "Rainfall"
+author: "Antonio J. Perez-Luque"
+date: "12/19/2018"
+output: 
+  md_document:
+    variant: markdown_github
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r pkg}
+library("here")
+library("tidyverse")
+library("lubridate")
+```
+
+# Prepare data 
+
+# Data validate from WiMMed 
+
+```{r}
+stations_w <- read.csv(file = here::here("data/prec/wimmed2015/prec_wimmed_stations.csv"))
+
+
+prec_w <- read.csv(file = here::here("data/prec/wimmed2015/prec_wimmed_data.csv"))
+
+# 
+d <- prec_w %>% 
+  group_by(station_code, yr = lubridate::year(date), mon = lubridate::month(date)) %>% 
+  summarise(monthly_rainfall = sum(prec, na.rm = TRUE), 
+            n_noNA = sum(!is.na(prec), na.rm = TRUE))
+  
+
+
+
+
+
+
+
+```
+
