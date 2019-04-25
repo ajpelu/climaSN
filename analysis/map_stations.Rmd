@@ -104,7 +104,11 @@ leaflet() %>%
   addProviderTiles("HikeBike.HillShading", group='Hillshade2') %>% 
   addLayersControl(position = 'bottomright',
                    baseGroups = c("Hillshade", "Satellite", "Basemap", "Topographical"),
+<<<<<<< HEAD
                    overlayGroups = c('Natural Protected Area', 'Estaciones (OBSNEV)', 'Estaciones REDIAM'), 
+=======
+                   overlayGroups = c('Natural Protected Area', 'Estaciones (OBSNEV)'), #'Estaciones REDIAM'), 
+>>>>>>> c1dc984623d2f04923a0246105330b6e9fd57f93
                    options = layersControlOptions(collapsed = FALSE)) %>% 
   addPolylines(data=sn, color='red', 
                group='Natural Protected Area', weight= 3) %>% 
@@ -112,6 +116,7 @@ leaflet() %>%
              lng=sp_station@data$long,
              lat=sp_station@data$lat, group = "Estaciones (OBSNEV)",
             # color = ~ mipal(sp_station@data$estado),
+<<<<<<< HEAD
              radius = 6, stroke = FALSE, fillOpacity = 0.7) %>%
   addCircleMarkers(sr_station@data,
              lng=sr_station@coords[, 'X_COORD'],
@@ -119,6 +124,17 @@ leaflet() %>%
              group = "Estaciones REDIAM", color = "red", 
             # color = ~ mipal(sp_station@data$estado),
              radius = 6, stroke = FALSE, fillOpacity = 0.7)
+=======
+             radius = 6, stroke = FALSE, fillOpacity = 0.7, popup = popup_station) 
+
+# %>%
+#   addCircleMarkers(sr_station@data,
+#              lng=sr_station@coords[, 'X_COORD'],
+#              lat=sr_station@coords[,'Y_COORD'],
+#              group = "Estaciones REDIAM", color = "red", 
+#             # color = ~ mipal(sp_station@data$estado),
+#              radius = 6, stroke = FALSE, fillOpacity = 0.7)
+>>>>>>> c1dc984623d2f04923a0246105330b6e9fd57f93
 ``` 
 
 

@@ -326,3 +326,46 @@ no changes added to commit (use "git add" and/or "git commit -a")
 Nothing specified, nothing added.
 Maybe you wanted to say 'git add .'?
 ]0;~/ugrDrive/PROYECTOS/climaSN[01;33majpeluLap@cvi024179[00m:[01;36m~/ugrDrive/PROYECTOS/climaSN[0;32m (master *%)[00m$ git add .
+]0;~/ugrDrive/PROYECTOS/climaSN[01;33majpeluLap@cvi024179[00m:[01;36m~/ugrDrive/PROYECTOS/climaSN[0;32m (master *+)[00m$ git push
+fatal: cannot run rpostback-askpass: No such file or directory
+Username for 'https://github.com': ajpelu
+fatal: cannot run rpostback-askpass: No such file or directory
+Password for 'https://ajpelu@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/ajpelu/climaSN.git/'
+]0;~/ugrDrive/PROYECTOS/climaSN[01;33majpeluLap@cvi024179[00m:[01;36m~/ugrDrive/PROYECTOS/climaSN[0;32m (master *+)[00m$ git commit -m 'add'
+[master 7020f39] add
+ 14 files changed, 998 insertions(+), 564 deletions(-)
+ rewrite .Rproj.user/8E19A541/console06/INDEX001 (85%)
+ create mode 100644 dbf_files.R
+]0;~/ugrDrive/PROYECTOS/climaSN[01;33majpeluLap@cvi024179[00m:[01;36m~/ugrDrive/PROYECTOS/climaSN[0;32m (master *)[00m$ git push
+fatal: cannot run rpostback-askpass: No such file or directory
+Username for 'https://github.com': ajpelu
+fatal: cannot run rpostback-askpass: No such file or directory
+Password for 'https://ajpelu@github.com': 
+To https://github.com/ajpelu/climaSN.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/ajpelu/climaSN.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+]0;~/ugrDrive/PROYECTOS/climaSN[01;33majpeluLap@cvi024179[00m:[01;36m~/ugrDrive/PROYECTOS/climaSN[0;32m (master *)[00m$ git pull
+remote: Enumerating objects: 44, done.[K
+remote: Counting objects:   2% (1/44)   [Kremote: Counting objects:   4% (2/44)   [Kremote: Counting objects:   6% (3/44)   [Kremote: Counting objects:   9% (4/44)   [Kremote: Counting objects:  11% (5/44)   [Kremote: Counting objects:  13% (6/44)   [Kremote: Counting objects:  15% (7/44)   [Kremote: Counting objects:  18% (8/44)   [Kremote: Counting objects:  20% (9/44)   [Kremote: Counting objects:  22% (10/44)   [Kremote: Counting objects:  25% (11/44)   [Kremote: Counting objects:  27% (12/44)   [Kremote: Counting objects:  29% (13/44)   [Kremote: Counting objects:  31% (14/44)   [Kremote: Counting objects:  34% (15/44)   [Kremote: Counting objects:  36% (16/44)   [Kremote: Counting objects:  38% (17/44)   [Kremote: Counting objects:  40% (18/44)   [Kremote: Counting objects:  43% (19/44)   [Kremote: Counting objects:  45% (20/44)   [Kremote: Counting objects:  47% (21/44)   [Kremote: Counting objects:  50% (22/44)   [Kremote: Counting objects:  52% (23/44)   [Kremote: Counting objects:  54% (24/44)   [Kremote: Counting objects:  56% (25/44)   [Kremote: Counting objects:  59% (26/44)   [Kremote: Counting objects:  61% (27/44)   [Kremote: Counting objects:  63% (28/44)   [Kremote: Counting objects:  65% (29/44)   [Kremote: Counting objects:  68% (30/44)   [Kremote: Counting objects:  70% (31/44)   [Kremote: Counting objects:  72% (32/44)   [Kremote: Counting objects:  75% (33/44)   [Kremote: Counting objects:  77% (34/44)   [Kremote: Counting objects:  79% (35/44)   [Kremote: Counting objects:  81% (36/44)   [Kremote: Counting objects:  84% (37/44)   [Kremote: Counting objects:  86% (38/44)   [Kremote: Counting objects:  88% (39/44)   [Kremote: Counting objects:  90% (40/44)   [Kremote: Counting objects:  93% (41/44)   [Kremote: Counting objects:  95% (42/44)   [Kremote: Counting objects:  97% (43/44)   [Kremote: Counting objects: 100% (44/44)   [Kremote: Counting objects: 100% (44/44), done.[K
+remote: Compressing objects:   8% (1/12)   [Kremote: Compressing objects:  16% (2/12)   [Kremote: Compressing objects:  25% (3/12)   [Kremote: Compressing objects:  33% (4/12)   [Kremote: Compressing objects:  41% (5/12)   [Kremote: Compressing objects:  50% (6/12)   [Kremote: Compressing objects:  58% (7/12)   [Kremote: Compressing objects:  66% (8/12)   [Kremote: Compressing objects:  75% (9/12)   [Kremote: Compressing objects:  83% (10/12)   [Kremote: Compressing objects:  91% (11/12)   [Kremote: Compressing objects: 100% (12/12)   [Kremote: Compressing objects: 100% (12/12), done.[K
+Unpacking objects:   4% (1/23)   Unpacking objects:   8% (2/23)   Unpacking objects:  13% (3/23)   Unpacking objects:  17% (4/23)   Unpacking objects:  21% (5/23)   Unpacking objects:  26% (6/23)   Unpacking objects:  30% (7/23)   Unpacking objects:  34% (8/23)   Unpacking objects:  39% (9/23)   Unpacking objects:  43% (10/23)   Unpacking objects:  47% (11/23)   Unpacking objects:  52% (12/23)   Unpacking objects:  56% (13/23)   Unpacking objects:  60% (14/23)   Unpacking objects:  65% (15/23)   Unpacking objects:  69% (16/23)   Unpacking objects:  73% (17/23)   Unpacking objects:  78% (18/23)   Unpacking objects:  82% (19/23)   Unpacking objects:  86% (20/23)   Unpacking objects:  91% (21/23)   remote: Total 23 (delta 8), reused 23 (delta 8), pack-reused 0[K
+Unpacking objects:  95% (22/23)   Unpacking objects: 100% (23/23)   Unpacking objects: 100% (23/23), done.
+From https://github.com/ajpelu/climaSN
+   63b18fe..c1dc984  master     -> origin/master
+Auto-merging analysis/map_stations.html
+CONFLICT (content): Merge conflict in analysis/map_stations.html
+Auto-merging analysis/map_stations.Rmd
+CONFLICT (content): Merge conflict in analysis/map_stations.Rmd
+Auto-merging .Rproj.user/shared/notebooks/paths
+CONFLICT (content): Merge conflict in .Rproj.user/shared/notebooks/paths
+Auto-merging .Rproj.user/8E19A541/console06/INDEX001
+CONFLICT (content): Merge conflict in .Rproj.user/8E19A541/console06/INDEX001
+Automatic merge failed; fix conflicts and then commit the result.
+]0;~/ugrDrive/PROYECTOS/climaSN[01;33majpeluLap@cvi024179[00m:[01;36m~/ugrDrive/PROYECTOS/climaSN[0;32m (master *+|MERGING)[00m$ 
